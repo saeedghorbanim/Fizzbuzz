@@ -3,18 +3,23 @@
 var x = 0;
 for (var i=0; i<=100; i++)
 {
-    if( i % 3 == 0)
+    if(i % 5 == 0 && i % 3 == 0 )
+    {
+        console.log("FizzBuzz");
+    }
+
+    else if( i % 3 == 0)
     {
         console.log("Fizz");
     }
 
-    elseif( i % 5 == 0) 
+    else if( i % 5 == 0) 
     {
         console.log("Buzz");
     }
 
-    elseif(i % 5 == 0 && i % 3 == 0 )
+    else 
     {
-        console.log("FizzBuzz");
+        console.log(i);
     }
 }
